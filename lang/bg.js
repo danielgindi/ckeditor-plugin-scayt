@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'bg', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'bg', {
 	about: 'About SCAYT', // MISSING
 	aboutTab: 'Относно',
 	addWord: 'Add Word', // MISSING

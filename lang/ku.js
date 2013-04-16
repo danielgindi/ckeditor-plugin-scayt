@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'ku', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'ku', {
 	about: 'دهربارهی SCAYT',
 	aboutTab: 'دهربارهی',
 	addWord: 'زیادکردنی ووشه',

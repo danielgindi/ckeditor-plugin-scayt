@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'eo', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'eo', {
 	about: 'Pri OKDVT',
 	aboutTab: 'Pri',
 	addWord: 'Almeti la vorton',

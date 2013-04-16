@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'sk', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'sk', {
 	about: 'O KPPP (Kontrola pravopisu počas písania)',
 	aboutTab: 'O',
 	addWord: 'Pridať slovo',

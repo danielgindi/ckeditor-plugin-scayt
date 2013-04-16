@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'cs', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'cs', {
 	about: 'O aplikaci SCAYT',
 	aboutTab: 'O aplikaci',
 	addWord: 'Přidat slovo',

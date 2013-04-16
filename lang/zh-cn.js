@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'zh-cn', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'zh-cn', {
 	about: '关于即时拼写检查',
 	aboutTab: '关于',
 	addWord: '添加单词',

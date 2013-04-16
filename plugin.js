@@ -250,7 +250,7 @@
 		   }
 		};
 
-	CKEDITOR.plugins.scayt = {
+	CKEDITOR.plugins.scayt_external = {
 		engineLoaded: false,
 		instances: {},
 		// Data storage for SCAYT control, based on editor instances
@@ -315,7 +315,7 @@
 				uiTabs[ i ] = ( typeof window.scayt != "undefined" && typeof window.scayt.uiTags != "undefined" ) ? ( parseInt( configUiTabs[ i ], 10 ) && window.scayt.uiTags[ i ] ) : parseInt( configUiTabs[ i ], 10 );
 			}
 			
-			if(typeof editor.plugins.wsc == "object")
+			if(typeof editor.plugins.wsc_external == "object")
 				uiTabs.push(1);
 			else 
 				uiTabs.push(0);
@@ -383,7 +383,7 @@
 		}
 	};
 
-	var plugin = CKEDITOR.plugins.scayt;
+	var plugin = CKEDITOR.plugins.scayt_external;
 
 	// Context menu constructing.
 	var addButtonCommand = function( editor, buttonName, buttonLabel, commandName, command, menugroup, menuOrder ) {
@@ -428,7 +428,7 @@
 	};
 
 	// Add scayt plugin.
-	CKEDITOR.plugins.add( 'scayt', {
+	CKEDITOR.plugins.add( 'scayt_external', {
 		requires: 'menubutton,dialog',
 		lang: 'af,ar,bg,bn,bs,ca,cs,cy,da,de,el,en-au,en-ca,en-gb,en,eo,es,et,eu,fa,fi,fo,fr-ca,fr,gl,gu,he,hi,hr,hu,is,it,ja,ka,km,ko,lt,lv,mk,mn,ms,nb,nl,no,pl,pt-br,pt,ro,ru,sk,sl,sr-latn,sr,sv,th,tr,ug,uk,vi,zh-cn,zh', // %REMOVE_LINE_CORE%
 		icons: 'scayt', // %REMOVE_LINE_CORE%
@@ -449,13 +449,8 @@
 			editor.config.menu_groups = items_order_str + ',' + editor.config.menu_groups;
 		},
 
-		checkEnvironment: function(){
-			return ( CKEDITOR.env.opera || CKEDITOR.env.air ) ? 0 : 1;
-		},
-
 		init: function( editor ) {
 
-			var self = this;
 			// Delete span[data-scaytid] when text pasting in editor (#6921)
 			var dataFilter = editor.dataProcessor && editor.dataProcessor.dataFilter;
 			var dataFilterRules = {
@@ -490,7 +485,7 @@
 			// combine menu items to render
 			var uiMenuItems = {};
 
-			var lang = editor.lang.scayt;
+			var lang = editor.lang.scayt_external;
 
 			// always added
 			uiMenuItems.scaytToggle = {
@@ -529,7 +524,7 @@
 			};
 			// always added
 			uiMenuItems.scaytAbout = {
-				label: editor.lang.scayt.about,
+				label: editor.lang.scayt_external.about,
 				group: menuGroup,
 				onClick: function() {
 					openPage = 'about';
@@ -539,7 +534,7 @@
 
 			if ( uiTabs[4] == 1 )
 				uiMenuItems.scaytWSC =	{
-						label : editor.lang.wsc.toolbar,
+						label : editor.lang.wsc_external.toolbar,
 						group : menuGroup,
 						command : wscCommandName
 				};
@@ -549,7 +544,7 @@
 			editor.ui.add( 'Scayt', CKEDITOR.UI_MENUBUTTON, {
 				label: lang.title,
 				title: CKEDITOR.env.opera ? lang.opera_title : lang.title,
-				modes: { wysiwyg: self.checkEnvironment() },
+				modes: { wysiwyg:1 },
 				toolbar: 'spellchecker,20',
 				onRender: function() {
 					command.on( 'state', function() {

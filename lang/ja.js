@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'ja', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'ja', {
 	about: 'SCAYTﾊﾞｰｼﾞｮﾝ',
 	aboutTab: 'バージョン情報',
 	addWord: '語句追加',

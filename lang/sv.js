@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'sv', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'sv', {
 	about: 'Om SCAYT',
 	aboutTab: 'Om',
 	addWord: 'Lägg till ord',

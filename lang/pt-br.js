@@ -2,7 +2,7 @@
 Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang( 'scayt', 'pt-br', {
+CKEDITOR.plugins.setLang( 'scayt_external', 'pt-br', {
 	about: 'Sobre a correção ortográfica durante a digitação',
 	aboutTab: 'Sobre',
 	addWord: 'Adicionar palavra',
