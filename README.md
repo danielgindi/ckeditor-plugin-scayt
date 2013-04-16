@@ -9,9 +9,12 @@ Installation
 ------------
 
 1. Clone/copy this repository contents in a new "plugins/scayt" folder in your CKEditor installation.
-2. Enable the "scayt" plugin in the CKEditor configuration file (config.js):
+2. Load external scayt plugin:
 
-        config.extraPlugins = 'scayt';
+        CKEDITOR.plugins.addExternal('scayt_external', baseUrl + 'scayt_external/', 'plugin.js');
+3.  Add loaded config into extra plugins
+
+		CKEDITOR.config.extraPlugins = "scayt_external";
 
 That's all. SCAYT will appear on the editor toolbar and will be ready to use.
 
