@@ -8,7 +8,7 @@ CKEDITOR.dialog.add( 'scaytcheck', function( editor ) {
 		captions,
 		doc = CKEDITOR.document,
 		editorName = editor.name,
-		tags = CKEDITOR.plugins.scayt.getUiTabs( editor ),
+		tags = CKEDITOR.plugins.scayt_external.getUiTabs( editor ),
 		i,
 		contents = [],
 		userDicActive = 0,
@@ -49,7 +49,7 @@ CKEDITOR.dialog.add( 'scaytcheck', function( editor ) {
 		}
 	}
 
-	var lang = editor.lang.scayt;
+	var lang = editor.lang.scayt_external;
 	var tags_contents = [
 		{
 		id: 'options',
@@ -189,7 +189,7 @@ CKEDITOR.dialog.add( 'scaytcheck', function( editor ) {
 		contents: contents
 	};
 
-	var scayt_control = CKEDITOR.plugins.scayt.getScayt( editor );
+	var scayt_control = CKEDITOR.plugins.scayt_external.getScayt( editor );
 
 	for ( i = 0; i < tags.length; i++ ) {
 		if ( tags[ i ] == 1 )
